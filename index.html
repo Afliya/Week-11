@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping Cart</title>
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Inter:wght@400;800&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <h1 class="title">Shopping Cart</h1>
+    <main class="shop">
+        <article class="shop shop__item">
+            <img class="shop shop__image" src="./assets/images/dress.jpg" alt="dress">
+            <div>
+                <p>Ted Baker dress</p>
+                <p>Color: Baby Blue</p>
+                <p>Size: M</p>
+                <p>Quantity: 1</p>
+            </div>
+            <div class="price">
+                <p id="price1">349.99</p>&nbsp
+                <p>USD</p>
+        </article>
+        <article class="shop shop__item">
+            <img class="shop shop__image" src="assets/images/shoes.jpg" alt="high heels">
+            <div>
+                <p>Kasadei shoes</p>
+                <p>Color: Beige</p>
+                <p>Size: 38</p>
+                <p>Quantity: 1</p>
+            </div>
+            <div class="price">
+                <p id="price2">419.22</p>&nbsp
+                <p>USD</p>
+        </article>
+        <article class="shop shop__item">
+            <img class="shop shop__image" src="./assets/images/clutch.jpg" alt="clutch">
+            <div>
+                <p>Jimmy Choo clutch</p>
+                <p>Color: Silver</p>
+                <p>Size: one size</p>
+                <p>Quantity: 1</p>
+            </div>
+            <div class="price">
+                <p id="price3">275.99</p>&nbsp
+                <p>USD</p>
+        </article>
+        <article class="shop shop__item">
+            <img class="shop shop__image" src="./assets/images/bracelet.jpg" alt="bracelet">
+            <div>
+                <p>Pandora bracelet</p>
+                <p>Color: Silver</p>
+                <p>Size: one size</p>
+                <p>Quantity: 1</p>
+            </div>
+            <div class="price">
+                <p id="price4">110.99</p>&nbsp
+                <p>USD</p>
+            </div>
+        </article>
+    </main>
+        <article>
+            <button type="button" id="shop__button" 
+            onmouseover="pressMe()"
+            onmouseout="pressMeBack()"
+            onclick="calculateWithDiscount()" 
+            >
+                Использовать купон на 20% 
+            </button>
+            <div class="total-value">Итого: <span id="total-price"></span> USD</div>
+        </article>
+        
+        <article class="inputtask"> <!--***** Задание под звездочкой**-->
+            <input type="number" id="number" placeholder="Enter number">
+            <input type="number" readonly id="total" placeholder="Result">
+            <button type="button" id="button" onclick="calculateSquare()">Calculate</button>
+        </article>
+
+    
+
+   
+
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+.body {
+    margin: 0 auto;
+    width: 70vw;
+    font-family: Inter, sans-serif;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.shop {
+    border: 1px solid black;
+}
+
+.shop__item {
+    
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 30% 20% 1fr;
+    align-items: center;
+}
+
+.shop__image {
+    width: 15vw;
+    
+}
+
+.price {
+    display: flex;
+    justify-content: end;
+    
+    margin-right: 20px;
+    color: blue;
+    font-weight: bold;
+    font-size: large;
+}
+
+#shop__button {
+    margin-top: 20px;
+    width: 30%;
+    height: 5vh;
+    background-color: rgb(122, 149, 221);
+    color: white;
+    border: rgb(122, 149, 221);
+}
+
+.total-value {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.inputtask {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
